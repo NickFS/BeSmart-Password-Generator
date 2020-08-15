@@ -29,6 +29,57 @@ function generatePassword(){
   var upperCases = confirm("Would you want upper cases in your password?");
 
   var special = confirm("Would you want special characters in your password?");
+
+  // Minimum count for numbers, lowerCases, upperCases & specialCharacters
+  var minimumCount = 0;
+
+  // Empty minimums for numbers, lowerCases, upperCases & specialCharacters
+  var minimumNumbers = "";
+  var minimumLowerCases = "";
+  var minimumUpperCases = "";
+  var minimumSpecialCases = '':
+
+  //Password Generator functions
+  var functionArray = {
+    getNumbers: function(){
+      return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
+    },
+
+    getLowerCases: function(){
+      return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
+    },
+
+    getUpperCases: function(){
+      return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
+    }
+
+  };
+
+  //Check and see if the user selected ok for all and use empty minimums from above.
+  if (numbers === true){
+    minimumNumbers = functionArray.getNumbers();
+    minimumCount++;
+  }
+
+  if (lowerCases === true){
+    minimumLowerCases = functionArray.getLowerCases();
+    minimumCount++;
+  }
+
+  if (special === true){
+    minimumSpecialCases = functionArray.getSpecialCharacter();
+    minimumCount++;
+  }
+
+
+  // Empty string for the for random character for loop
+  for (let i =0; i < (parseInt(passwordLength) - minimumCount); i++){
+    var randomNumberPicked = Math.floor(Math.random() * 4);
+
+    randomPasswordGenerated += randomNumberPicked;
+  }
+
+
 }
 
 
