@@ -1,7 +1,7 @@
 // Assignment code here
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
 
 // Special characters for the function created
 const specialCharacters = "!@#$%^&*()";
@@ -37,7 +37,7 @@ function generatePassword(){
   var minimumNumbers = "";
   var minimumLowerCases = "";
   var minimumUpperCases = "";
-  var minimumSpecialCases = '':
+  var minimumSpecialCases = "";
 
   //Password Generator functions
   var functionArray = {
@@ -51,6 +51,10 @@ function generatePassword(){
 
     getUpperCases: function(){
       return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
+    },
+
+    getSpecialCharacters: function(){
+      return specialCharacters[Math.floor(Math.random() * specialCharacters.length)]
     }
 
   };
@@ -67,9 +71,12 @@ function generatePassword(){
   }
 
   if (special === true){
-    minimumSpecialCases = functionArray.getSpecialCharacter();
+    minimumSpecialCases = functionArray.getSpecialCharacters();
     minimumCount++;
   }
+
+     // empty string variable for the for loop below
+    var randomPasswordGenerated = "";
 
 
   // Empty string for the for random character for loop
@@ -79,6 +86,13 @@ function generatePassword(){
     randomPasswordGenerated += randomNumberPicked;
   }
 
+  // Ensure that the characters are added to the password
+  randomPasswordGenerated += minimumNumbers;
+  randomPasswordGenerated += minimumLowerCases;
+  randomPasswordGenerated += minimumUpperCases;
+  randomPasswordGenerated += minimumSpecialCases;
+
+  return randomPasswordGenerated;
 
 }
 
