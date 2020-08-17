@@ -1,12 +1,10 @@
 # BeSmart-Password-Generator
 
-This project solves the security concern of weak passwords. Given that a user needs a new, secured password, they will be prompted to determine certain character types required for the password and then a new random password will be generated.
+The BeSmart Password Generator provides users the ability to quickly generate a password.
 
-The new password implements greater security to sensitive data and saves time for users.
+The required criteria to generate a newly created password are: <br>
 
-The criteria that the password is able to meet are: <br>
-
-1) The password is between 12 - 128 characters long, AND <br>
+1) The password input options are between between 12 - 128 characters long. <br>
 
 2) The password must have at least one of the following character types: <br>
     *lowercase characters <br>
@@ -14,8 +12,9 @@ The criteria that the password is able to meet are: <br>
     *special characters <br>
     *numeric characters <br>
 
-## The final product
+* [GitHub Repository](https://github.com/NickFS/BeSmart-Password-Generator)
+* [Deployed GitHub IO](https://nickfs.github.io/BeSmart-Password-Generator/)
 
 
 <img src="password_gen_ex.png" alt="picture of password generator"> <br>
-<img src="example2.png" alt="picture of completed password"> <br>
+<img src="password_gen_ex_2.png" alt="picture of completed password"> <br>
