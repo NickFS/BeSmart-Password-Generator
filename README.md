@@ -15,6 +15,9 @@ The required criteria to generate a newly created password are: <br>
 * [GitHub Repository](https://github.com/NickFS/BeSmart-Password-Generator)
 * [Deployed GitHub IO](https://nickfs.github.io/BeSmart-Password-Generator/)
 
+![my screenshot](https://github.com/NickFS/BeSmart-Password-Generator/blob/master/password_gen_ex.PNG)
+
+![my screenshot](https://github.com/NickFS/BeSmart-Password-Generator/blob/master/password_gen_ex_2.PNG)
 
 <img src="password_gen_ex.png" alt="picture of password generator"> <br>
 <img src="password_gen_ex_2.png" alt="picture of completed password"> <br>
