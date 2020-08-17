@@ -18,7 +18,7 @@ function writePassword() {
 
 }
 
-// Prompts that come the password generate button is clicked.
+// Prompts and confirms options when the password generate button is clicked.
 function generatePassword(){
   var passwordLength = prompt("Please enter the number of characters you would like for your new password.  It must be more than 12 but less than 128.");
 
